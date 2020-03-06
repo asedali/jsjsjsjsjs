@@ -2,10 +2,5 @@
     "name": "newjsjsjs",
     "description": "Heroku",
     "repository": "https://gjuith",
-    "keywords": ["node", "new", "jsjs"],
-    "buildpacks": [
-        {
-          "url": "heroku/nodejs"
-        }
-      ]
+    "keywords": ["node", "new", "jsjs"]
   }
