@@ -1,0 +1,19 @@
+{
+    "name": "newjsjsjs",
+    "description": "Heroku",
+    "repository": "https://gjuith",
+    "keywords": ["node", "new", "jsjs"],
+    "formation": {
+        "web": {
+            "quantity": 1
+        },
+        "worker": {
+            "quantity": 0
+        }
+   },
+    "buildpacks": [
+        {
+          "url": "heroku/nodejs"
+        }
+      ]
+  }
