@@ -1,5 +1,5 @@
 {
-  "name": "newjsjsjs",
+  "name": "jsdomnew",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/",
   "dependencies": {
-    "zombie": "^6.0.0"
+    "jsdom": "^16.0.0"
   }
 }
