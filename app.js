@@ -1,8 +1,22 @@
-var Browser = require("zombie");
-browser = new Browser()
-browser.visit("https://nimiqintest.blogspot.com/", function () {
-	console.log(browser.dump());
-	setInterval(function() {
-		console.log(browser.html('p'));
-	},1000); 
+let jsdom = require('jsdom').JSDOM,
+ // the file I will be loading
+uri = 'index.html',
+ // the options that I will be giving to jsdom
+options = {
+    runScripts: 'dangerously',
+    resources: "usable"
+};
+
+// load from an external file
+jsdom.fromFile(uri, options).then(function (dom) {
+
+    let window = dom.window,
+    document = window.document;
+
+    console.log(document.querySelectorAll('p')[0].innerHTML);
+
+}).catch (function (e) {
+
+    console.log(e);
+
 });
